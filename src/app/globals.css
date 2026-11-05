@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* 03_디자인시스템.md 토큰 — nol.md 관측값을 그대로 가져오고 모퉁이 역할로 재매핑 */
+:root {
+  --color-primary-main: #4154ff;
+  --color-primary-press: #2432ad;
+  --color-primary-weak: #f5f6ff;
+  --color-primary-weak2: #b2baff;
+
+  --color-accent-main: #e5000f;
+  --color-accent-weak: #fef5f5;
+
+  --color-warning-main: #cc4100;
+  --color-warning-weak: #fef8f2;
+
+  --color-neutral-main: #1b1c1f;
+  --color-neutral-strong1: #6e6f73;
+  --color-neutral-medium: #8b8d92;
+  --color-neutral-weak3: #dadbdf;
+  --color-neutral-weak2: #e9eaef;
+  --color-neutral-weak1: #f2f3f7;
+  --color-neutral-weak: #f7f8fb;
+
+  --background: #ffffff;
+  --foreground: var(--color-neutral-main);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary-main);
+  --color-primary-press: var(--color-primary-press);
+  --color-primary-weak: var(--color-primary-weak);
+  --color-accent: var(--color-accent-main);
+  --color-accent-weak: var(--color-accent-weak);
+  --color-warning: var(--color-warning-main);
+  --color-warning-weak: var(--color-warning-weak);
+  --color-neutral: var(--color-neutral-main);
+  --color-neutral-sub: var(--color-neutral-strong1);
+  --color-neutral-weak: var(--color-neutral-weak);
+  --color-neutral-weak1: var(--color-neutral-weak1);
+  --color-neutral-weak2: var(--color-neutral-weak2);
+  --color-neutral-weak3: var(--color-neutral-weak3);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, "Segoe UI", sans-serif;
+}
